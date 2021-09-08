@@ -23,7 +23,6 @@ class RectanglePainter extends CustomPainter {
     Offset _pointB = Offset(size.width * 5 / 6, size.height * 1 / 1.5);
 
     Paint _rRectanglePainter = Paint()
-      ..color = Colors.purple
       ..style = PaintingStyle.stroke
       ..strokeWidth = 8
       ..strokeCap = StrokeCap.round

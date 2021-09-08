@@ -27,7 +27,6 @@ class LinePainter extends CustomPainter {
     Offset _pointD = Offset(size.width * 1 / 2, size.height * 5 / 6);
 
     Paint _linePainter = Paint()
-      ..color = Colors.purple
       ..style = PaintingStyle.stroke
       ..strokeWidth = 8
       ..strokeCap = StrokeCap.round
