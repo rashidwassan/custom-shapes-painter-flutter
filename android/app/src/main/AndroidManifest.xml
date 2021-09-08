@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_custom_painer_shapes">
    <application
-        android:label="flutter_custom_painer_shapes"
+        android:label="Flutter Painter Shapes"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
