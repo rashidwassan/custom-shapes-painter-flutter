@@ -27,7 +27,7 @@ class ArchPainter extends CustomPainter {
       ..strokeWidth = 8
       ..strokeCap = StrokeCap.round
       ..shader =
-          ui.Gradient.linear(_pointA, _pointB, [Colors.orange, Colors.yellow]);
+          ui.Gradient.linear(_pointA, _pointB, [Colors.orange, Colors.red]);
 
     final Path _arch1 = Path();
 
