@@ -22,17 +22,17 @@ class RectanglePainter extends CustomPainter {
     Offset _pointA = Offset(size.width * 1 / 6, size.height * 1 / 4);
     Offset _pointB = Offset(size.width * 5 / 6, size.height * 1 / 1.5);
 
-    Paint _rectanglePainter = Paint()
+    Paint _rRectanglePainter = Paint()
       ..color = Colors.purple
       ..style = PaintingStyle.stroke
       ..strokeWidth = 8
       ..strokeCap = StrokeCap.round
       ..shader =
-          ui.Gradient.linear(_pointA, _pointB, [Colors.blue, Colors.red]);
+          ui.Gradient.linear(_pointA, _pointB, [Colors.cyan, Colors.yellow]);
 
     final _rect = Rect.fromPoints(_pointA, _pointB);
 
-    canvas.drawRect(_rect, _rectanglePainter);
+    canvas.drawRect(_rect, _rRectanglePainter);
   }
 
   @override
