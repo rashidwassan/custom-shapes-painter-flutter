@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_painer_shapes/pages/arc_paint_page.dart';
+import 'package:flutter_custom_painer_shapes/pages/circle_paint_page.dart';
+import 'package:flutter_custom_painer_shapes/pages/image_paint_page.dart';
+import 'package:flutter_custom_painer_shapes/pages/line_paint_page.dart';
+import 'package:flutter_custom_painer_shapes/pages/rectangle_paint_page.dart';
+import 'package:flutter_custom_painer_shapes/pages/rounded_rectangle_page.dart';
+import 'package:flutter_custom_painer_shapes/pages/triangle_paint_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -21,6 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           centerTitle: true,
           bottom: const TabBar(
+            isScrollable: true,
             tabs: [
               Tab(
                 text: 'Arc',
@@ -53,6 +60,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   )),
             ],
           ),
+        ),
+        body: const TabBarView(
+          children: [
+            ArcPaintPage(),
+            CirclePaintPage(),
+            ImagePaintPage(),
+            LinePaintPage(),
+            RectanglePaintPage(),
+            RoundedRectanglePaintPage(),
+            TrianglePaintPage(),
+          ],
         ),
       ),
     );
